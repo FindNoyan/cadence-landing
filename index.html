@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadence — Scheduling that runs itself</title>
+  <meta name="description" content="Cadence finds the meeting time everyone can make, books it, and updates every calendar automatically." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <span class="logo">Cadence</span>
+      <nav class="nav__links">
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a class="btn btn--ghost" href="#signup">Sign up free</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <h1>Stop trading emails just to find a meeting time.</h1>
+          <p>Cadence looks at everyone's calendar, finds a slot that works, books it, and keeps every calendar in sync — no back-and-forth required.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#signup">Start free — no card required</a>
+            <a class="btn btn--text" href="#how">See how it works ↓</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="mock">
+            <div class="mock__header">
+              <span class="mock__title">This week</span>
+              <span class="mock__pill">Auto-booking</span>
+            </div>
+            <div class="mock__row">
+              <span>Mon</span>
+              <div class="mock__slot"></div>
+            </div>
+            <div class="mock__row">
+              <span>Tue</span>
+              <div class="mock__slot mock__slot--fill" id="fillSlot">
+                <span class="mock__slot-label">Design review · 2:00pm</span>
+              </div>
+            </div>
+            <div class="mock__row">
+              <span>Wed</span>
+              <div class="mock__slot"></div>
+            </div>
+            <div class="mock__row">
+              <span>Thu</span>
+              <div class="mock__slot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <div class="how__grid">
+          <div class="how__item">
+            <h3>Share your link</h3>
+            <p>Send one Cadence link instead of listing your availability by hand.</p>
+          </div>
+          <div class="how__item">
+            <h3>We find the overlap</h3>
+            <p>Cadence checks every attendee's real calendar, including time zones, and finds slots that actually work.</p>
+          </div>
+          <div class="how__item">
+            <h3>It books itself</h3>
+            <p>Once picked, the meeting is added to every calendar automatically — no confirmation emails needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="wrap feature__inner">
+        <div class="feature__visual" aria-hidden="true">
+          <div class="chip">✓ Synced with Google Calendar</div>
+          <div class="chip">✓ Synced with Outlook</div>
+          <div class="chip">✓ Time zones handled automatically</div>
+        </div>
+        <div class="feature__copy">
+          <h2>Works with the calendars your team already uses.</h2>
+          <p>No new app for your invitees to learn. Cadence sits quietly behind the calendar you already have, and only speaks up when there's a time to confirm.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="wrap">
+        <p class="eyebrow">Pricing</p>
+        <div class="pricing__grid">
+          <div class="plan">
+            <h3>Free</h3>
+            <p class="plan__price">$0</p>
+            <p>One calendar, unlimited bookings.</p>
+            <a class="btn btn--ghost" href="#signup">Get started</a>
+          </div>
+          <div class="plan plan--highlight">
+            <h3>Team</h3>
+            <p class="plan__price">$8<span>/user/mo</span></p>
+            <p>Shared availability, round-robin routing, and priority support.</p>
+            <a class="btn btn--primary" href="#signup">Start free trial</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="signup">
+      <div class="wrap cta__inner">
+        <h2>Give your calendar the week off.</h2>
+        <a class="btn btn--primary" href="mailto:noyantanveer35@gmail.com">Get started free</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Cadence — a demo product built to showcase landing page design &amp; front-end development.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
