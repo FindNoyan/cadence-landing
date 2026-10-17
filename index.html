@@ -28,7 +28,7 @@
       <div class="wrap hero__inner">
         <div class="hero__copy">
           <h1>Stop trading emails just to find a meeting time.</h1>
-          <p>Cadence looks at everyone's calendar, finds a slot that works, books it, and keeps every calendar in sync — no back-and-forth required.</p>
+          <p>Cadence looks at everyone’s calendar, finds a slot that works, books it, and keeps every calendar in sync — no back-and-forth required.</p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#signup">Start free — no card required</a>
             <a class="btn btn--text" href="#how">See how it works ↓</a>
@@ -73,7 +73,7 @@
           </div>
           <div class="how__item">
             <h3>We find the overlap</h3>
-            <p>Cadence checks every attendee's real calendar, including time zones, and finds slots that actually work.</p>
+            <p>Cadence checks every attendee’s real calendar, including time zones, and finds slots that actually work.</p>
           </div>
           <div class="how__item">
             <h3>It books itself</h3>
@@ -92,7 +92,7 @@
         </div>
         <div class="feature__copy">
           <h2>Works with the calendars your team already uses.</h2>
-          <p>No new app for your invitees to learn. Cadence sits quietly behind the calendar you already have, and only speaks up when there's a time to confirm.</p>
+          <p>No new app for your invitees to learn. Cadence sits quietly behind the calendar you already have, and only speaks up when there’s a time to confirm.</p>
         </div>
       </div>
     </section>
@@ -119,8 +119,23 @@
 
     <section class="cta" id="signup">
       <div class="wrap cta__inner">
-        <h2>Give your calendar the week off.</h2>
-        <a class="btn btn--primary" href="mailto:noyantanveer35@gmail.com">Get started free</a>
+        <h2 id="signup-heading">Give your calendar the week off.</h2>
+        <p class="cta__note">Demo form: the page itself sends nothing. Submitting opens your mail app with a prefilled signup message.</p>
+        <form class="signup" id="signupForm" action="mailto:noyantanveer35@gmail.com" method="post" enctype="text/plain" novalidate>
+          <div class="signup__field">
+            <label for="signupName">Name</label>
+            <input id="signupName" name="name" type="text" autocomplete="name" required aria-describedby="signupNameError" />
+            <p class="signup__error" id="signupNameError" role="alert"></p>
+          </div>
+          <div class="signup__field">
+            <label for="signupEmail">Email</label>
+            <input id="signupEmail" name="email" type="email" autocomplete="email" required aria-describedby="signupEmailError" />
+            <p class="signup__error" id="signupEmailError" role="alert"></p>
+          </div>
+          <button class="btn btn--primary" type="submit">Get started free</button>
+          <p class="signup__status" id="signupStatus" aria-live="polite"></p>
+        </form>
+        <p class="cta__fallback">Prefer email? <a href="mailto:noyantanveer35@gmail.com">Write to us directly</a>.</p>
       </div>
     </section>
   </main>
