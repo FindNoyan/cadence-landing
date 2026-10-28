@@ -47,11 +47,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="nav">
     <div class="wrap nav__inner">
-      <span class="logo">Cadence</span>
-      <nav class="nav__links">
+      <a class="logo" href="index.html">Cadence</a>
+      <nav class="nav__links" aria-label="Primary">
         <a href="#how">How it works</a>
         <a href="#pricing">Pricing</a>
       </nav>
@@ -59,11 +60,11 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="wrap hero__inner">
         <div class="hero__copy">
-          <h1>Stop trading emails just to find a meeting time.</h1>
+          <h1 id="hero-heading">Stop trading emails just to find a meeting time.</h1>
           <p>Cadence looks at everyone’s calendar, finds a slot that works, books it, and keeps every calendar in sync — no back-and-forth required.</p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#signup">Start free — no card required</a>
@@ -99,9 +100,9 @@
       </div>
     </section>
 
-    <section class="how" id="how">
+    <section class="how" id="how" aria-labelledby="how-heading">
       <div class="wrap">
-        <p class="eyebrow">How it works</p>
+        <p class="eyebrow" id="how-heading">How it works</p>
         <div class="how__grid">
           <div class="how__item">
             <h3>Share your link</h3>
@@ -119,7 +120,7 @@
       </div>
     </section>
 
-    <section class="feature">
+    <section class="feature" aria-labelledby="feature-heading">
       <div class="wrap feature__inner">
         <div class="feature__visual" aria-hidden="true">
           <div class="chip">✓ Synced with Google Calendar</div>
@@ -127,15 +128,15 @@
           <div class="chip">✓ Time zones handled automatically</div>
         </div>
         <div class="feature__copy">
-          <h2>Works with the calendars your team already uses.</h2>
+          <h2 id="feature-heading">Works with the calendars your team already uses.</h2>
           <p>No new app for your invitees to learn. Cadence sits quietly behind the calendar you already have, and only speaks up when there’s a time to confirm.</p>
         </div>
       </div>
     </section>
 
-    <section class="pricing" id="pricing">
+    <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
       <div class="wrap">
-        <p class="eyebrow">Pricing</p>
+        <p class="eyebrow" id="pricing-heading">Pricing</p>
         <div class="pricing__grid">
           <div class="plan">
             <h3>Free</h3>
@@ -153,7 +154,7 @@
       </div>
     </section>
 
-    <section class="cta" id="signup">
+    <section class="cta" id="signup" aria-labelledby="signup-heading">
       <div class="wrap cta__inner">
         <h2 id="signup-heading">Give your calendar the week off.</h2>
         <p class="cta__note">Demo form: the page itself sends nothing. Submitting opens your mail app with a prefilled signup message.</p>
