@@ -41,6 +41,54 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which calendars does Cadence work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Calendar and Outlook. Cadence works with the calendars your team already uses — it sits quietly behind the calendar you already have."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Cadence handle time zones?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cadence checks every attendee’s real calendar, including time zones, and finds slots that actually work. Time zones are handled automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do my guests need to install anything?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. There is no new app for your invitees to learn — they just open the Cadence link you send them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does the free plan include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One calendar and unlimited bookings for $0. You can start free — no card required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does booking work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Send one Cadence link instead of listing your availability by hand. Cadence finds the overlap, and once picked, the meeting is added to every calendar automatically — no confirmation emails needed."
+        }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -55,6 +103,7 @@
       <nav class="nav__links" aria-label="Primary">
         <a href="#how">How it works</a>
         <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
       </nav>
       <a class="btn btn--ghost" href="#signup">Sign up free</a>
     </div>
@@ -150,6 +199,35 @@
             <p>Shared availability, round-robin routing, and priority support.</p>
             <a class="btn btn--primary" href="#signup">Start free trial</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+      <div class="wrap">
+        <p class="eyebrow" id="faq-heading">FAQ</p>
+        <h2>Questions, answered.</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Which calendars does Cadence work with?</summary>
+            <p>Google Calendar and Outlook. Cadence works with the calendars your team already uses — it sits quietly behind the calendar you already have.</p>
+          </details>
+          <details class="faq__item">
+            <summary>How does Cadence handle time zones?</summary>
+            <p>Cadence checks every attendee’s real calendar, including time zones, and finds slots that actually work. Time zones are handled automatically.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Do my guests need to install anything?</summary>
+            <p>No. There is no new app for your invitees to learn — they just open the Cadence link you send them.</p>
+          </details>
+          <details class="faq__item">
+            <summary>What does the free plan include?</summary>
+            <p>One calendar and unlimited bookings for $0. You can start free — no card required.</p>
+          </details>
+          <details class="faq__item">
+            <summary>How does booking work?</summary>
+            <p>Send one Cadence link instead of listing your availability by hand. Cadence finds the overlap, and once picked, the meeting is added to every calendar automatically — no confirmation emails needed.</p>
+          </details>
         </div>
       </div>
     </section>
