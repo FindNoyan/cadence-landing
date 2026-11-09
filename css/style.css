@@ -143,10 +143,9 @@ a { color: inherit; text-decoration: none; }
   padding: 10px 0;
   font-size: 13px;
   color: var(--muted);
-  border-top: 1px solid var(--line);
 }
 
-.mock__row:first-of-type { border-top: none; }
+.mock__row + .mock__row { border-top: 1px solid var(--line); }
 
 .mock__slot {
   height: 34px;
