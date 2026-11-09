@@ -400,6 +400,8 @@ summary:focus-visible {
 }
 
 @media (max-width: 780px) {
+  .nav__inner { flex-wrap: wrap; row-gap: 12px; }
+  .nav__links { order: 3; flex-basis: 100%; gap: 20px; }
   .hero__inner, .feature__inner { grid-template-columns: 1fr; }
   .how__grid { grid-template-columns: 1fr; gap: 28px; }
   .pricing__grid { grid-template-columns: 1fr; }
